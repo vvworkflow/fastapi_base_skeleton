@@ -8,3 +8,4 @@ class User(Base):
     __tablename__ = "users"
 
     username: Mapped[str] = mapped_column(unique=True)
+    password: Mapped[str]
